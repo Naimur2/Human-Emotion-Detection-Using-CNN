@@ -7,8 +7,8 @@ from keras.models import load_model
 from keras.preprocessing import image
 from keras.preprocessing.image import img_to_array
 
-face_classifier = cv2.CascadeClassifier(r'D:\Python\Project2\haarcascade_frontalface_default.xml')
-classifier =load_model(r'D:\Python\Project2\Emotion_little_vgg.h5')
+face_classifier = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
+classifier =load_model(r'Emotion_little_vgg.h5')
 
 class_labels = ['Angry','Happy','Neutral','Sad','Surprise']
 def facedetector(src):
